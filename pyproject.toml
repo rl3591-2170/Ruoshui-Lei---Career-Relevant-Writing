@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "wordle-lei-ruoshui"
+version = "0.1.0"
+description = "Wordle helper functions for validating and checking guesses"
+authors = ["Ruoshui Lei <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "wordle_lei_ruoshui", from = "src" }]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^5.0.0"
+sphinx-rtd-theme = "^2.0.0"
+myst-parser = "^3.0.0"
+sphinx = "^7.2.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
